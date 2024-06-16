@@ -1632,13 +1632,7 @@
 						},
 						"requirements": "The clockwork handler has a creature {@condition restrained}",
 						"entries": [
-							"The clockwork handler cuts a length of rope from the supply in its chassis to tie up the {@condition restrained} creature. The creature is {@condition restrained} until it"
-						]
-					},
-					{
-						"name": "Escapes or Forces",
-						"entries": [
-							"Open the rope with a successful {@dc 15} check (typically an attack roll or {@skill Thievery} check to {@action Escape}, or an {@skill Athletics} check to {@action Force Open} the ropes; {@condition restrained} creatures don't take a \u20132 penalty on this check for not using a crowbar). The rope has Hardness 2 and 8 Hit Points (BT 4)."
+							"The clockwork handler cuts a length of rope from the supply in its chassis to tie up the {@condition restrained} creature. The creature is {@condition restrained} until it {@action Escape||Escapes} or {@action Force Open||Forces Open} the rope with a successful {@dc 15} check (typically an attack roll or {@skill Thievery} check to {@action Escape}, or an {@skill Athletics} check to {@action Force Open} the ropes; {@condition restrained} creatures don't take a \\u20132 penalty on this check for not using a crowbar). The rope has Hardness 2 and 8 Hit Points (BT 4)."
 						]
 					},
 					{

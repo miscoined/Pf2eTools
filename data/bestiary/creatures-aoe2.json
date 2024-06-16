@@ -636,7 +636,10 @@
 			"languages": {
 				"languages": [
 					"common",
-					"infernal (can't speak any language)"
+					"infernal"
+				],
+				"notes": [
+					"can't speak any language"
 				]
 			},
 			"skills": {
@@ -1484,38 +1487,30 @@
 						"name": "Leaping Charge"
 					},
 					{
-						"entries": [
-							"As bone skipper swarm, but {@dc 25}."
-						],
+						"type": "affliction",
 						"name": "Marrow Rot",
-						"entries_as_xyz": [
+						"traits": [
+							"disease"
+						],
+						"note": "Marrow rot affects only creatures with a skeletal system",
+						"DC": 25,
+						"savingThrow": "Fortitude",
+						"onset": "1 day",
+						"stages": [
 							{
-								"type": "affliction",
-								"name": "",
-								"traits": [
-									"disease"
-								],
-								"note": "Marrow rot affects only creatures with a skeletal system",
-								"DC": 24,
-								"savingThrow": "Fortitude",
-								"onset": "1 day",
-								"stages": [
-									{
-										"stage": 1,
-										"entry": "{@condition enfeebled|CRB|enfeebled 1}",
-										"duration": "1 day"
-									},
-									{
-										"stage": 2,
-										"entry": "{@condition enfeebled|CRB|enfeebled 2}",
-										"duration": "1 day"
-									},
-									{
-										"stage": 3,
-										"entry": "{@condition enfeebled|CRB|enfeebled 2} and {@condition drained|CRB|drained 1}",
-										"duration": "1 day"
-									}
-								]
+								"stage": 1,
+								"entry": "{@condition enfeebled|CRB|enfeebled 1}",
+								"duration": "1 day"
+							},
+							{
+								"stage": 2,
+								"entry": "{@condition enfeebled|CRB|enfeebled 2}",
+								"duration": "1 day"
+							},
+							{
+								"stage": 3,
+								"entry": "{@condition enfeebled|CRB|enfeebled 2} and {@condition drained|CRB|drained 1}",
+								"duration": "1 day"
 							}
 						]
 					}
@@ -2398,8 +2393,9 @@
 							"unit": "reaction"
 						},
 						"trigger": "A creature hits the seamer with a melee {@action Strike}",
+						"note": "Every Skinsaw seamer keeps a sewing needle attached to a loop of thick silk, wrapped loosely around their hand not holding a weapon, which they can use in combat to snag or disarm attackers",
 						"entries": [
-							"Every Skinsaw seamer keeps a sewing needle attached to a loop of thick silk, wrapped loosely around their hand not holding a weapon, which they can use in combat to snag or disarm attackers; ; The seamer attempts an {@skill Athletics} check to either {@action Grapple} or {@action Disarm} the triggering creature."
+							"The seamer attempts an {@skill Athletics} check to either {@action Grapple} or {@action Disarm} the triggering creature."
 						],
 						"name": "Wire Catch"
 					}
@@ -2711,13 +2707,20 @@
 					{
 						"activity": {
 							"number": 1,
-							"unit": "action"
+							"unit": "varies",
+							"entry": "{@as 1} or {@as 2}"
 						},
 						"traits": [
-							"or"
+							"emotion",
+							"enchantment",
+							"fear",
+							"incapacitation",
+							"mental",
+							"occult",
+							"visual"
 						],
 						"entries": [
-							"{@as 2} (emotion, enchantment, fear, incapacitation, mental, occult, visual) A tenome can gaze at a creature within 30 feet by presenting one of its eyes. The target must succeed at a {@dc 21} Will save or become {@condition frightened|CRB|frightened 1}. If the tenome uses 2 actions and presents both of its eyes, the target is also {@condition paralyzed} if it fails the save. A creature that successfully saves is temporarily immune for 24 hours."
+							"A tenome can gaze at a creature within 30 feet by presenting one of its eyes. The target must succeed at a {@dc 21} Will save or become {@condition frightened|CRB|frightened 1}. If the tenome uses 2 actions and presents both of its eyes, the target is also {@condition paralyzed} if it fails the save. A creature that successfully saves is temporarily immune for 24 hours."
 						],
 						"name": "Terrifying Gaze"
 					}
@@ -2771,7 +2774,10 @@
 			],
 			"languages": {
 				"languages": [
-					"vudrani (can't speak any language)"
+					"vudrani"
+				],
+				"notes": [
+					"can't speak any language"
 				]
 			},
 			"skills": {
@@ -2884,15 +2890,9 @@
 							"unit": "action"
 						},
 						"entries": [
-							"The teraphant lets out a loud trumpet that deals {@damage 8d8} mental damage ({@dc 27} basic Will save) in a 30-foot cone. A creature that fails its save is also pushed 15 feet (30 feet on a critical failure). If a pushed creatures strikes a solid barrier, it takes {@damage 3d6} bludgeoning damage and stops. The teraphant can't use."
+							"The teraphant lets out a loud trumpet that deals {@damage 8d8} mental damage ({@dc 27} basic Will save) in a 30-foot cone. A creature that fails its save is also pushed 15 feet (30 feet on a critical failure). If a pushed creatures strikes a solid barrier, it takes {@damage 3d6} bludgeoning damage and stops. The teraphant can't use Psychokinetic Trumpet again for {@dice 1d4} rounds."
 						],
 						"name": "Psychokinetic Trumpet"
-					},
-					{
-						"entries": [
-							"Trumpet again for {@dice 1d4} rounds."
-						],
-						"name": "Psychokinetic"
 					},
 					{
 						"activity": {
@@ -3011,15 +3011,9 @@
 						],
 						"trigger": "A creature {@action Strike||Strikes} the vaultbreaker ooze",
 						"entries": [
-							"The ooze's outer plasm hardens into a protective shell of precious metals. Until the start of its next turn, it gains resistance 5 to physical damage (except adamantine), it has a \u20135-foot penalty to its Speed, and its pseudopod {@action Strike||Strikes} gain the versatile."
+							"The ooze's outer plasm hardens into a protective shell of precious metals. Until the start of its next turn, it gains resistance 5 to physical damage (except adamantine), it has a \u20135-foot penalty to its Speed, and its pseudopod {@action Strike||Strikes} gain the {@trait versatile <S or P>} weapon trait."
 						],
 						"name": "Metallify"
-					},
-					{
-						"entries": [
-							"P weapon trait."
-						],
-						"name": "S or"
 					}
 				],
 				"bot": [
@@ -3160,15 +3154,14 @@
 					]
 				}
 			],
+			"items": [
+				"+1 hide armor",
+				"doubling rings",
+				"modified spiked chains (2)",
+				"+1 striking cleaver (functions as ork neck-splitter without the orc trait)",
+				"key to the Skinsaw sanctum vault"
+			],
 			"abilities": {
-				"top": [
-					{
-						"entries": [
-							"Skinsaw sanctum vault, modified spiked chains (2)"
-						],
-						"name": "to the"
-					}
-				],
 				"mid": [
 					{
 						"activity": {
@@ -3190,9 +3183,9 @@
 					},
 					{
 						"entries": [
-							"Skinner can effectively wield abnormally long spiked chains and can do so using only one hand."
+							"The Skinner can effectively wield abnormally long spiked chains and can do so using only one hand."
 						],
-						"name": "Chain Expert The"
+						"name": "Chain Expert"
 					},
 					{
 						"activity": {
@@ -3201,21 +3194,15 @@
 						},
 						"requirements": "The Skinner has an adjacent creature {@condition grabbed} with her spiked chain",
 						"entries": [
-							"The Skinner attempts an {@skill Athletics} check against the {@condition grabbed} creature's Reflex save."
+							"The Skinner attempts an {@skill Athletics} check against the {@condition grabbed} creature's Reflex save DC. On a success, the Skinner knots her chain around the {@condition grabbed} creature, which becomes {@condition restrained} ({@action Escape} DC = 10 + the result of the Skinner's {@skill Athletics} check); on a critical success, the creature also falls {@condition prone}. Regardless of whether the Skinner succeeds, she drops the chain."
 						],
 						"name": "Chain Up"
 					},
 					{
 						"entries": [
-							"On a success, the Skinner knots her chain around the {@condition grabbed} creature, which becomes {@condition restrained} ({@action Escape} DC = 10 + the result of the Skinner's {@skill Athletics} check); on a critical success, the creature also falls {@condition prone}. Regardless of whether the Skinner succeeds, she drops the chain."
+							"Whenever the Skinner makes a successful cleaver {@action Strike} against a {@condition grabbed} creature, she also deals {@damage 1d6} {@condition persistent damage||persistent bleed damage} (or {@dice 2d6} on a critical hit)."
 						],
-						"name": "DC."
-					},
-					{
-						"entries": [
-							"Skinner makes a successful cleaver {@action Strike} against a {@condition grabbed} creature, she also deals {@damage 1d6} {@condition persistent damage||persistent bleed damage} (or {@dice 2d6} on a critical hit)."
-						],
-						"name": "Flay Whenever the"
+						"name": "Flay"
 					},
 					{
 						"activity": {

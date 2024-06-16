@@ -375,7 +375,7 @@
 			],
 			"spellcasting": [
 				{
-					"name": "Occult Spells Known Spells",
+					"name": "Occult Spells Known",
 					"tradition": "occult",
 					"DC": 14,
 					"entry": {
@@ -8270,15 +8270,9 @@
 					},
 					{
 						"entries": [
-							"When the physician rolls a critical failure on a check to {@action Treat Disease}, Treat."
+							"When the physician rolls a critical failure on a check to {@action Treat Disease}, {@action Treat Poison}, or {@action Treat Wounds}, they get a failure instead."
 						],
 						"name": "Doctor's Hand"
-					},
-					{
-						"entries": [
-							"Wounds, they get a failure instead."
-						],
-						"name": "Poison, or Treat"
 					}
 				]
 			},

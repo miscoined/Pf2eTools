@@ -1647,10 +1647,13 @@
 			],
 			"languages": {
 				"languages": [
-					"aklo (can't speak any language)"
+					"aklo"
 				],
 				"abilities": [
 					"telepathy 300 feet"
+				],
+				"notes": [
+					"can't speak any language"
 				]
 			},
 			"skills": {
@@ -1787,15 +1790,9 @@
 			"abilities": {
 				"top": [
 					{
-						"name": "Lamp",
+						"name": "Lamp Vision",
 						"entries": [
-							"Vision The Claws of Time is specially attuned to the crystal lamps in the"
-						]
-					},
-					{
-						"name": "Cradle of Quartz.",
-						"entries": [
-							"It can sense creatures within 30 feet of any crystal lamp in the Cradle of Quartz. These lamps are marked as glowing blue dots on the map on page 42. This is a precise sense."
+							"The Claws of Time is specially attuned to the crystal lamps in the Cradle of Quartz. It can sense creatures within 30 feet of any crystal lamp in the Cradle of Quartz. These lamps are marked as glowing blue dots on the map on page 42. This is a precise sense."
 						]
 					}
 				],

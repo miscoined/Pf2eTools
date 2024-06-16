@@ -3821,6 +3821,14 @@
 					"DC": 36,
 					"attack": 28,
 					"entry": {
+						"0": {
+							"level": 8,
+							"spells": [
+								{
+									"name": "telekinetic projectile"
+								}
+							]
+						},
 						"2": {
 							"spells": [
 								{
@@ -3844,6 +3852,15 @@
 									"amount": 3
 								}
 							]
+						},
+						"constant": {
+							"8": {
+								"spells": [
+									{
+										"name": "fly"
+									}
+								]
+							}
 						}
 					}
 				}
@@ -3854,7 +3871,8 @@
 					"DC": 36,
 					"rituals": [
 						{
-							"name": "inveigle"
+							"name": "inveigle",
+							"level": 2
 						}
 					]
 				}
@@ -3887,15 +3905,6 @@
 				],
 				"bot": [
 					{
-						"traits": [
-							"8th"
-						],
-						"entries": [
-							"telekinetic projectile; Constant (8th) fly Occult Rituals {@dc 36}; inveigle."
-						],
-						"name": "Cantrips"
-					},
-					{
 						"activity": {
 							"number": 2,
 							"unit": "action"
@@ -3906,13 +3915,7 @@
 							"occult"
 						],
 						"entries": [
-							"The thoughtmaw invades the mind of a creature within 100 feet and attempts to swallow its capacity for higher thought. The creature must attempt a {@dc 36} Will save."
-						],
-						"name": "Consume Knowledge"
-					},
-					{
-						"entries": [
-							"Knowledge immediately ends any of the ability's previous effects on a different creature.",
+							"The thoughtmaw invades the mind of a creature within 100 feet and attempts to swallow its capacity for higher thought. The creature must attempt a {@dc 36} Will save. Using Consume Knowledge immediately ends any of the ability's previous effects on a different creature.",
 							{
 								"type": "successDegree",
 								"entries": {
@@ -3923,7 +3926,7 @@
 								}
 							}
 						],
-						"name": "Using Consume"
+						"name": "Consume Knowledge"
 					}
 				]
 			},

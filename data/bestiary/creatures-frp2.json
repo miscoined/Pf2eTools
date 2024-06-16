@@ -1965,6 +1965,26 @@
 					"DC": 35,
 					"attack": 27,
 					"entry": {
+						"0": {
+							"level": 7,
+							"spells": [
+								{
+									"name": "detect magic"
+								},
+								{
+									"name": "electric arc"
+								},
+								{
+									"name": "light"
+								},
+								{
+									"name": "produce flame"
+								},
+								{
+									"name": "shield"
+								}
+							]
+						},
 						"1": {
 							"spells": [
 								{
@@ -2071,15 +2091,6 @@
 			],
 			"abilities": {
 				"bot": [
-					{
-						"traits": [
-							"7th"
-						],
-						"entries": [
-							"detect magic, electric arc, light, produce flame, shield."
-						],
-						"name": "Cantrips"
-					},
 					{
 						"activity": {
 							"number": 1,
@@ -4762,6 +4773,26 @@
 					"DC": 35,
 					"attack": 27,
 					"entry": {
+						"0": {
+							"level": 7,
+							"spells": [
+								{
+									"name": "detect magic"
+								},
+								{
+									"name": "electric arc"
+								},
+								{
+									"name": "light"
+								},
+								{
+									"name": "produce flame"
+								},
+								{
+									"name": "shield"
+								}
+							]
+						},
 						"1": {
 							"spells": [
 								{
@@ -4868,15 +4899,6 @@
 			],
 			"abilities": {
 				"bot": [
-					{
-						"traits": [
-							"7th"
-						],
-						"entries": [
-							"detect magic, electric arc, light, produce flame, shield."
-						],
-						"name": "Cantrips"
-					},
 					{
 						"activity": {
 							"number": 1,

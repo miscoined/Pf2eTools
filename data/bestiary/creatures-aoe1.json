@@ -905,6 +905,10 @@
 						"entries": [
 							"See Pathfinder Bestiary 277."
 						],
+						"generic": {
+							"tag": "feat",
+							"add_hash": "Ratfolk"
+						},
 						"name": "Cheek Pouches"
 					},
 					{
@@ -918,15 +922,20 @@
 							"number": 1,
 							"unit": "free"
 						},
-						"entries": [
-							"See Pathfinder Bestiary 277."
-						],
+						"generic": {
+							"tag": "feat",
+							"add_hash": "Ratfolk"
+						},
 						"name": "Quick Stow"
 					},
 					{
 						"entries": [
 							"See Pathfinder Bestiary 277."
 						],
+						"generic": {
+							"tag": "feat",
+							"add_hash": "Ratfolk"
+						},
 						"name": "Swarming"
 					}
 				]
@@ -978,7 +987,10 @@
 			],
 			"languages": {
 				"languages": [
-					"aklo (can't speak any language)"
+					"aklo"
+				],
+				"notes": [
+					"can't speak any language"
 				]
 			},
 			"skills": {
@@ -1497,6 +1509,10 @@
 						"entries": [
 							"The ratfolk has stretchy cheek pouches that can store up to 1 cubic foot of objects (though no more than 4 light items). The ratfolk can remove or store an item using the {@action Interact} action. As long as the ratfolk has at least one object in its cheek pouches, its speech is noticeably difficult to understand."
 						],
+						"generic": {
+							"tag": "feat",
+							"add_hash": "Ratfolk"
+						},
 						"name": "Cheek Pouches"
 					},
 					{
@@ -1510,16 +1526,18 @@
 							"number": 1,
 							"unit": "free"
 						},
-						"entries": [
-							"See Pathfinder Bestiary 277."
-						],
+						"generic": {
+							"tag": "feat",
+							"add_hash": "Ratfolk"
+						},
 						"name": "Quick Stow"
 					},
 					{
-						"entries": [
-							"277."
-						],
-						"name": "Swarming See Pathfinder Bestiary"
+						"generic": {
+							"tag": "feat",
+							"add_hash": "Ratfolk"
+						},
+						"name": "Swarming"
 					}
 				]
 			},
@@ -1870,18 +1888,22 @@
 					]
 				}
 			],
-			"abilities": {
-				"bot": [
-					{
-						"traits": [
-							"1st"
-						],
-						"entries": [
-							"mage hand, tanglefoot."
-						],
-						"name": "Cantrips"
-					}
-				]
+			"spellcasting": {
+				"type": "Prepared",
+				"tradition": "arcane",
+				"dc": 15,
+				"attack": 7,
+				"0": {
+					"level": 1,
+					"spells": [
+						{
+							"name": "mage hand"
+						},
+						{
+							"name": "tanglefoot"
+						}
+					]
+				}
 			},
 			"defenses": {
 				"ac": {
@@ -1951,14 +1973,6 @@
 				"walk": 20
 			},
 			"abilities": {
-				"top": [
-					{
-						"entries": [
-							"+7 Languages Common Str +2, Dex +4, Con +3, Int \u20133, Wis +0, Cha \u20133."
-						],
-						"name": "Stealth"
-					}
-				],
 				"mid": [
 					{
 						"entries": [
@@ -2139,9 +2153,9 @@
 					},
 					{
 						"entries": [
-							"Attack Ralso deals an extra {@damage 1d6} precision damage to {@condition flat-footed} creatures."
+							"Ralso deals an extra {@damage 1d6} precision damage to {@condition flat-footed} creatures."
 						],
-						"name": "Sneak"
+						"name": "Sneak Attack"
 					}
 				]
 			},
@@ -2187,7 +2201,10 @@
 			],
 			"languages": {
 				"languages": [
-					"common (can't speak any language)"
+					"common"
+				],
+				"notes": [
+					"can't speak any language"
 				]
 			},
 			"skills": {
@@ -2269,7 +2286,7 @@
 						},
 						"requirements": "The shredskin is adjacent to a Medium or Small humanoidshaped corpse",
 						"entries": [
-							"The shredskin wraps itself around the corpse and takes control of the host body. While controlling a host, the shredskin uses the host's Speed but its own attacks, and it loses its Grab and Enshroud abilities. Attacks that target the shredskin while it controls a body deal half of the damage to the shredskin and half of the damage to the host body. Attacks that target an area deal damage to both the shredskin and host body normally. The shredskin can release the host body as a free action at the start of its turn. If the host is destroyed, the shredskin automatically releases the body and is {@condition flat-footed} for 1 round. A Medium corpse typically has 15 Hit Points, while a Small corpse typically has 10 Hit Points. Creatures can notice that a corpse is {@condition controlled} by a shredskin by succeeding a."
+							"The shredskin wraps itself around the corpse and takes control of the host body. While controlling a host, the shredskin uses the host's Speed but its own attacks, and it loses its Grab and Enshroud abilities. Attacks that target the shredskin while it controls a body deal half of the damage to the shredskin and half of the damage to the host body. Attacks that target an area deal damage to both the shredskin and host body normally. The shredskin can release the host body as a free action at the start of its turn. If the host is destroyed, the shredskin automatically releases the body and is {@condition flat-footed} for 1 round. A Medium corpse typically has 15 Hit Points, while a Small corpse typically has 10 Hit Points. Creatures can notice that a corpse is {@condition controlled} by a shredskin by succeeding at a Perception check against the shredskin's {@skill Deception} DC (typically {@dc 18})."
 						],
 						"name": "Control Body"
 					}
@@ -2357,6 +2374,17 @@
 					"DC": 20,
 					"attack": 12,
 					"entry": {
+						"0": {
+							"level": 2,
+							"spells": [
+								{
+									"name": "mage hand"
+								},
+								{
+									"name": "telekinetic projectile"
+								}
+							]
+						},
 						"2": {
 							"spells": [
 								{
@@ -2397,15 +2425,6 @@
 					}
 				],
 				"bot": [
-					{
-						"traits": [
-							"2nd"
-						],
-						"entries": [
-							"mage hand, telekinetic projectile."
-						],
-						"name": "Cantrips"
-					},
 					{
 						"activity": {
 							"number": 2,
@@ -2554,15 +2573,19 @@
 					{
 						"name": "Distracting Shadows",
 						"entries": [
-							"Skebs can use creatures that are at least one size larger than themself as cover for the {@action Hide} and {@action Sneak} actions."
-						]
+							"Shadows Skebs can use creatures that are at least one size larger than themself as cover for the {@action Hide} and {@action Sneak} actions."
+						],
+						"name": "Distracting"
 					}
 				],
 				"bot": [
 					{
+						"traits": [
+							"precision"
+						],
 						"name": "Sneak Attack",
 						"entries": [
-							"(precision) Skebs deals {@dice 1d6} extra precision damage to {@condition flat-footed} creatures."
+							"Skebs deals {@dice 1d6} extra precision damage to {@condition flat-footed} creatures."
 						],
 						"generic": {
 							"tag": "ability"
@@ -2841,10 +2864,19 @@
 							"transmutation"
 						],
 						"entries": [
-							"The zrukbat assumes the shape of any Small object or ornamentation, although the zrukbat's mimicked objects usually have unrealistic or suspicious quirks. This doesn't change the zrukbat's size but can alter their coloration and visual appearance. They have an automatic result of 23 on {@skill Deception} checks and DCs to pass as the mimicked object.",
-							"Go for the Eyes {@as 2} The zrukbat flies up to its Speed and makes a claw {@action Strike} at the end of its move. If the claw attack hits, the target must succeed on a {@dc 15} Fortitude saving throw or be {@condition blinded} for 1 round (or {@condition blinded} for 1 minute on a critical failure). If the {@action Strike} was a critical hit, the target's save result is one degree of success worse."
+							"The zrukbat assumes the shape of any Small object or ornamentation, although the zrukbat's mimicked objects usually have unrealistic or suspicious quirks. This doesn't change the zrukbat's size but can alter their coloration and visual appearance. They have an automatic result of 23 on {@skill Deception} checks and DCs to pass as the mimicked object."
 						],
 						"name": "Dubious Shifting"
+					},
+					{
+						"name": "Go for the Eyes",
+						"activity": {
+							"number": 1,
+							"unit": "action"
+						},
+						"entries": [
+							"The zrukbat flies up to its Speed and makes a claw {@action Strike} at the end of its move. If the claw attack hits, the target must succeed on a {@dc 15} Fortitude saving throw or be {@condition blinded} for 1 round (or {@condition blinded} for 1 minute on a critical failure). If the {@action Strike} was a critical hit, the target's save result is one degree of success worse."
+						]
 					}
 				]
 			},

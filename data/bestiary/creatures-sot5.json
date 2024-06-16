@@ -2851,9 +2851,9 @@
 						]
 					},
 					{
-						"name": "Discorporate When the King of Biting",
+						"name": "Discorporate",
 						"entries": [
-							"Ants is reduced to 0 HP, he discorporates, and the component ants that make up his body disperse in every direction. If even a single ant escapes, the King of Biting Ants will eventually reform using a process that typically takes {@dice 1d10} days.",
+							"When the King of Biting Ants is reduced to 0 HP, he discorporates, and the component ants that make up his body disperse in every direction. If even a single ant escapes, the King of Biting Ants will eventually reform using a process that typically takes {@dice 1d10} days.",
 							"Applying area damage immediately after the King of Biting Ants is killed prevents his return."
 						]
 					}
@@ -2866,13 +2866,7 @@
 							"unit": "action"
 						},
 						"entries": [
-							"The King of"
-						]
-					},
-					{
-						"name": "Biting Ants",
-						"entries": [
-							"Strides to a creature, ends h i s movement sharing a space with it, and deals {@damage 3d8} piercing damage and {@damage 3d8} poison damage to it ({@dc 39} basic Reflex save). A creature that fails this save also takes {@damage 2d8} {@condition persistent damage||persistent piercing damage}."
+							"The King of Biting Ants Strides to a creature, ends h i s movement sharing a space with it, and deals {@damage 3d8} piercing damage and {@damage 3d8} poison damage to it ({@dc 39} basic Reflex save). A creature that fails this save also takes {@damage 2d8} {@condition persistent damage||persistent piercing damage}."
 						]
 					},
 					{
@@ -2885,26 +2879,14 @@
 							"concentrate"
 						],
 						"entries": [
-							"The King of Biting Ants collapses into a shapeless swarm of ants. He drops all held, worn, and carried items. While discorporated, The"
-						]
-					},
-					{
-						"name": "King of Biting",
-						"entries": [
-							"Ants can't use attack actions and can't cast spells, but he can move through areas small enough for his individual ants to fit without having to {@action Squeeze}.",
+							"The King of Biting Ants collapses into a shapeless swarm of ants. He drops all held, worn, and carried items. While discorporated, The King of Biting Ants can't use attack actions and can't cast spells, but he can move through areas small enough for his individual ants to fit without having to {@action Squeeze}.",
 							"He can use the same action to coalesce back into his normal form."
 						]
 					},
 					{
 						"name": "Swarming Bites",
 						"entries": [
-							"While a creature is taking {@condition persistent damage||persistent piercing damage} from the King of Biting Ants's tendril"
-						]
-					},
-					{
-						"name": "Strike or Squirming",
-						"entries": [
-							"Embrace, or while within a visions of danger area that it has not disbelieved, it is also {@condition clumsy||clumsy 1}. If the creature attempts a concentrate or manipulate action while affected, it must succeed at a DC {@flatDC 5} flat check or the action is lost; roll the check after spending the action, but before {@trait any} effects are applied."
+							"While a creature is taking {@condition persistent damage||persistent piercing damage} from the King of Biting Ants's tendril Strike or Squirming Embrace, or while within a visions of danger area that it has not disbelieved, it is also {@condition clumsy||clumsy 1}. If the creature attempts a concentrate or manipulate action while affected, it must succeed at a DC {@flatDC 5} flat check or the action is lost; roll the check after spending the action, but before {@trait any} effects are applied."
 						]
 					}
 				]

@@ -1872,6 +1872,26 @@
 					"DC": 37,
 					"attack": 27,
 					"entry": {
+						"0": {
+							"level": 7,
+							"spells": [
+								{
+									"name": "detect magic"
+								},
+								{
+									"name": "ghost sound"
+								},
+								{
+									"name": "message"
+								},
+								{
+									"name": "shield"
+								},
+								{
+									"name": "telekinetic projectile"
+								}
+							]
+						},
 						"1": {
 							"spells": [
 								{
@@ -1986,17 +2006,6 @@
 							"Kapral casts blink on herself."
 						],
 						"name": "Contingency Plan"
-					}
-				],
-				"bot": [
-					{
-						"traits": [
-							"7th"
-						],
-						"entries": [
-							"detect magic, ghost sound, message, shield, telekinetic projectile."
-						],
-						"name": "Cantrips"
 					}
 				]
 			},

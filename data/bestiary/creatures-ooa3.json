@@ -1276,13 +1276,7 @@
 							"unit": "action"
 						},
 						"entries": [
-							"The puppeteer reins in a creature {@condition grabbed} by its string. The puppeteer attempts an {@skill Athletics} check against the creature's"
-						]
-					},
-					{
-						"name": "Fortitude DC.",
-						"entries": [
-							"On a success, the puppeteer pulls the creature 15 feet closer to it (30 feet closer on a critical success)."
+							"The puppeteer reins in a creature {@condition grabbed} by its string. The puppeteer attempts an {@skill Athletics} check against the creature's Fortitude DC. On a success, the puppeteer pulls the creature 15 feet closer to it (30 feet closer on a critical success)."
 						]
 					}
 				]

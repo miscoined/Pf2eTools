@@ -39288,15 +39288,9 @@
 							"divine"
 						],
 						"entries": [
-							"The ostiarius always knows the direction and distance to the closest portal between the Shadow."
+							"The ostiarius always knows the direction and distance to the closest portal between the Shadow Pane and the Material Plane. This sense functions only on these two planes."
 						],
 						"name": "Sense Portal"
-					},
-					{
-						"entries": [
-							"This sense functions only on these two planes."
-						],
-						"name": "Plane and the Material Plane."
 					}
 				],
 				"mid": [

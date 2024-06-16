@@ -4919,12 +4919,7 @@
 							"unit": "action"
 						},
 						"entries": [
-							"The ecorche attempts two claw {@action Strike||Strikes} against the same target. If both hit and deal damage, it attempts to pull the skin off its target. It attempts an {@skill Athletics} check against the enemy's"
-						]
-					},
-					{
-						"name": "Fortitude DC.",
-						"entries": [
+							"The ecorche attempts two claw {@action Strike||Strikes} against the same target. If both hit and deal damage, it attempts to pull the skin off its target. It attempts an {@skill Athletics} check against the enemy's Fortitude DC.",
 							{
 								"type": "successDegree",
 								"entries": {
@@ -4980,12 +4975,7 @@
 							"The ecorche wears the skin as a disguise.",
 							"It assumes the creature's size, appearance, and voice. Wearing Skin counts as creating a disguise for the {@action Impersonate} use of {@skill Deception}.",
 							"The ecorche's transformation automatically defeats {@skill Perception} DCs to determine whether it's a member of the ancestry or creature type into which it transformed, and the ecorche gains a +4 status bonus to its {@skill Deception} DC to prevent others from seeing through its disguise.",
-							"Wearing a skin gives the ecorche a +2 item bonus to AC and 75 temporary"
-						]
-					},
-					{
-						"name": "Hit Points.",
-						"entries": [
+							"Wearing a skin gives the ecorche a +2 item bonus to AC and 75 temporary Hit Points.",
 							"If the ecorche takes more than 50 slashing damage from a single source, the skin becomes {@condition broken}. When {@condition broken}, the skin no longer provides any of these benefits (any remaining temporary HP are immediately lost) but can still be used for Tear Skin."
 						]
 					}
@@ -6665,13 +6655,7 @@
 						],
 						"trigger": "A ghoul ally within 30 feet Consumes Flesh to regain Hit Points",
 						"entries": [
-							"The priest of {@deity Kabriri|LOGM} unleashes a rapturous howl in praise of their god. All ghouls within 30 feet of the priest of {@deity Kabriri|LOGM}, including the priest but not the triggering ghoul, regain half as many Hit Points as the triggering ghoul. All living creatures within 30 feet take negative damage equal to half the number of Hit Points the triggering ghoul gained, with a {@dc 20} basic Fortitude save. Only one Ecstatic Ululation can affect a use of"
-						]
-					},
-					{
-						"name": "Consume Flesh.",
-						"entries": [
-							"Any beyond the first have no effect."
+							"The priest of {@deity Kabriri|LOGM} unleashes a rapturous howl in praise of their god. All ghouls within 30 feet of the priest of {@deity Kabriri|LOGM}, including the priest but not the triggering ghoul, regain half as many Hit Points as the triggering ghoul. All living creatures within 30 feet take negative damage equal to half the number of Hit Points the triggering ghoul gained, with a {@dc 20} basic Fortitude save. Only one Ecstatic Ululation can affect a use of Consume Flesh. Any beyond the first have no effect."
 						]
 					}
 				],
@@ -17175,18 +17159,8 @@
 					{
 						"name": "Severed Trunk",
 						"entries": [
-							"When the zombie mammoth is hit by a critical hit that deals slashing damage, the mammoth's trunk is severed from its body. Any creature {@condition grabbed} or {@condition restrained} with the trunk is released, and the mammoth loses its trunk"
-						]
-					},
-					{
-						"name": "Strike and Greater Constrict.",
-						"entries": [
-							"The trunk slithers across the battlefield, still animated, and acts in initiative right after the mammoth. It retains Greater Constrict and trunk {@action Strike||Strikes} but can't use tusk {@action Strike||Strikes}, foot"
-						]
-					},
-					{
-						"name": "{@action Strike||Strikes}, or Shambling Trample.",
-						"entries": [
+							"When the zombie mammoth is hit by a critical hit that deals slashing damage, the mammoth's trunk is severed from its body. Any creature {@condition grabbed} or {@condition restrained} with the trunk is released, and the mammoth loses its trunk Strike and Greater Constrict.",
+							"The trunk slithers across the battlefield, still animated, and acts in initiative right after the mammoth. It retains Greater Constrict and trunk {@action Strike||Strikes} but can't use tusk {@action Strike||Strikes}, foot {@action Strike||Strikes}, or Shambling Trample.",
 							"It has all the stats of the mammoth, except its AC is reduced to 23, it has only 50 Hit Points, and its Speed is 10 feet. Damage dealt to the severed trunk has no effect on the zombie mammoth."
 						]
 					}

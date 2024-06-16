@@ -1385,13 +1385,7 @@
 						},
 						"requirements": "Gambulami is larger than Small in size and has a creature {@condition grabbed} with his jaws",
 						"entries": [
-							"Gambulami whips the creature around, smashing it against other nearby creatures. He makes an {@skill Athletics} check against the {@condition grabbed} creature's"
-						]
-					},
-					{
-						"name": "Fortitude DC.",
-						"entries": [
-							"Regardless of the result, the creature is released from Gambulami's jaws afterward, escaping into the space in which it was {@condition grabbed}.",
+							"Gambulami whips the creature around, smashing it against other nearby creatures. He makes an {@skill Athletics} check against the {@condition grabbed} creature's Fortitude DC. Regardless of the result, the creature is released from Gambulami's jaws afterward, escaping into the space in which it was {@condition grabbed}.",
 							{
 								"type": "successDegree",
 								"entries": {
@@ -3501,7 +3495,7 @@
 						},
 						"trigger": "The sun hunter is targeted with a melee or ranged attack by an attacker they can see",
 						"entries": [
-							"The sun hunter gains a +2 circumstance bonus to"
+							"The sun hunter gains a +2 circumstance bonus to AC against the triggering attack."
 						]
 					}
 				],
@@ -3522,13 +3516,7 @@
 							"unit": "action"
 						},
 						"entries": [
-							"The sun hunter reads a creature they can see within 30 feet to notice openings. The sun hunter attempts a {@skill Perception} check against that creature's"
-						]
-					},
-					{
-						"name": "Deception DC or Will",
-						"entries": [
-							"DC, whichever is higher. The target is then temporarily immune for 1 minute.",
+							"The sun hunter reads a creature they can see within 30 feet to notice openings. The sun hunter attempts a {@skill Perception} check against that creature's Deception DC or Will DC, whichever is higher. The target is then temporarily immune for 1 minute.",
 							{
 								"type": "successDegree",
 								"entries": {

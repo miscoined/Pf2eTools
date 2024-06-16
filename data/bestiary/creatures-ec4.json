@@ -512,6 +512,17 @@
 					"DC": 33,
 					"attack": 27,
 					"entry": {
+						"0": {
+							"level": 6,
+							"spells": [
+								{
+									"name": "detect magic"
+								},
+								{
+									"name": "produce flame"
+								}
+							]
+						},
 						"3": {
 							"spells": [
 								{
@@ -570,6 +581,15 @@
 									"name": "dominate"
 								}
 							]
+						},
+						"constant": {
+							"6": {
+								"spells": [
+									{
+										"name": "true seeing"
+									}
+								]
+							}
 						}
 					}
 				}
@@ -583,22 +603,17 @@
 							"mental"
 						],
 						"requirements": "A doblagub has bonded with their current location by being called there via a ritual or by remaining in one place for 10 years",
+						"range": {
+							"unit": "feet",
+							"number": 40
+						},
 						"entries": [
-							"40 feet. ; The doblagub grows etheric fibers that they can use to psychically keep prey close. Any time a creature tries to move within this aura, it must succeed at a {@dc 30} Will save or the movement fails and the action is wasted."
+							"The doblagub grows etheric fibers that they can use to psychically keep prey close. Any time a creature tries to move within this aura, it must succeed at a {@dc 30} Will save or the movement fails and the action is wasted."
 						],
 						"name": "Etheric Fibers"
 					}
 				],
 				"bot": [
-					{
-						"traits": [
-							"6th"
-						],
-						"entries": [
-							"detect magic, produce flame; Constant (6th) true seeing."
-						],
-						"name": "Cantrips"
-					},
 					{
 						"activity": {
 							"number": 1,
@@ -608,8 +623,9 @@
 							"unit": "round",
 							"number": 1
 						},
+						"requirements": "The doblagub's etheric fibers aura is active",
 						"entries": [
-							"Requirements The doblagub's etheric fibers aura is active; ; All nonbrughadatch creatures within the aura must succeed at a {@dc 30} Fortitude save or be pulled 10 feet toward the doblagub."
+							"All nonbrughadatch creatures within the aura must succeed at a {@dc 30} Fortitude save or be pulled 10 feet toward the doblagub."
 						],
 						"name": "Etheric Tug"
 					},
@@ -1031,15 +1047,9 @@
 				"mid": [
 					{
 						"entries": [
-							"When flipped on its back, a giant aukashungi can't move and its soft underbelly becomes exposed. Whenever a creature critically succeeds at a melee attack roll to {@action Strike} a giant aukashungi, the attacking creature can forgo the bonus damage to flip over the giant aukashungi (all other critical hit effects apply normally, such as critical specialization effects). While flipped over, the giant aukashungi can't use reactions, can't {@action Stride} or {@action Strike}, takes a \u20132 circumstance penalty to AC and saving throws, loses its resistances, and gains weakness 10 to physical damage. The aukashungi can right itself by using the."
+							"When flipped on its back, a giant aukashungi can't move and its soft underbelly becomes exposed. Whenever a creature critically succeeds at a melee attack roll to {@action Strike} a giant aukashungi, the attacking creature can forgo the bonus damage to flip over the giant aukashungi (all other critical hit effects apply normally, such as critical specialization effects). While flipped over, the giant aukashungi can't use reactions, can't {@action Stride} or {@action Strike}, takes a \u20132 circumstance penalty to AC and saving throws, loses its resistances, and gains weakness 10 to physical damage. The aukashungi can right itself by using the Roll Up activity and then using an action to unroll."
 						],
 						"name": "Flippable"
-					},
-					{
-						"entries": [
-							"Up activity and then using an action to unroll."
-						],
-						"name": "Roll"
 					}
 				],
 				"bot": [
@@ -1064,21 +1074,9 @@
 						},
 						"entries": [
 							"The aukashungi protects its soft underbelly by rolling into a tight ball.",
-							"The aukashungi gains a +2 circumstance bonus to AC while Rolled Up, but it cannot {@action Stride} or {@action Strike}, and it rolls downhill if on a slope. If the aukashungi is grappling a creature when it."
+							"The aukashungi gains a +2 circumstance bonus to AC while Rolled Up, but it cannot {@action Stride} or {@action Strike}, and it rolls downhill if on a slope. If the aukashungi is grappling a creature when it Rolls Up, that creature must succeed at a {@dc 35} Fortitude save or become Swallowed Whole. The aukashungi can unroll with a single action (this action has the {@trait move} trait)."
 						],
 						"name": "Roll Up"
-					},
-					{
-						"entries": [
-							"Up, that creature must succeed at a {@dc 35} Fortitude save or become."
-						],
-						"name": "Rolls"
-					},
-					{
-						"entries": [
-							"The aukashungi can unroll with a single action (this action has the {@trait move} trait)."
-						],
-						"name": "Swallowed Whole."
 					},
 					{
 						"activity": {
@@ -1243,26 +1241,20 @@
 				"top": [
 					{
 						"entries": [
-							"A harrow doll can cast {@spell augury} as part of a harrow reading, which takes the usual 10 minutes. When casting locate, the harrow doll doesn't need to have previously {@condition observed} a specific object to learn its direction, but instead can detail the direction only vaguely, using such phrases as \"beside a weeping mound\""
+							"A harrow doll can cast {@spell augury} as part of a harrow reading, which takes the usual 10 minutes. When casting locate, the harrow doll doesn't need to have previously {@condition observed} a specific object to learn its direction, but instead can detail the direction only vaguely, using such phrases as \"beside a weeping mound\", or \"beneath the lost sky.\" When the harrow doll casts {@spell mind reading}, there is no effect if the target critically succeeds its save. Each time a harrow doll makes a harrow reading, it also changes which saving throw is affected by its fortune's favor ability."
 						],
 						"name": "Uncanny Divination"
-					},
-					{
-						"traits": [
-							"or"
-						],
-						"entries": [
-							"\"beneath the lost sky.\" When the harrow doll casts mind reading, there is no effect if the target critically succeeds its save. Each time a harrow doll makes a harrow reading, it also changes which saving throw is affected by its fortune's favor ability."
-						],
-						"name": ""
 					}
 				],
 				"mid": [
 					{
 						"entries": [
-							"If the suit of its latest harrow reading is unknown, roll {@dice 1d6} at the beginning of combat to randomly determine it."
+							"Whenever the harrow doll attempts a specific type of saving throw, it rolls twice and takes the higher result. The type of saving throw is determined by the suit that featured most prominently in the doll’s most recent harrow reading: Fortitude (Hammers or Shields), Reflex (Keys or Books), or Will (Stars or Crowns). If the suit of its latest harrow reading is unknown, roll {@dice 1d6} at the beginning of combat to randomly determine it."
 						],
-						"name": "Crowns)."
+						"traits": [
+							"fortune"
+						],
+						"name": "Fortune's Favor"
 					}
 				],
 				"bot": [
